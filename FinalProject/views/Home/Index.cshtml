@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Welcome to Community Assistance</h1>
+    <p class="lead">This is a service designed to help people apply for grants to help persue their future goals. We aslo are currently accepting donations. </p>
+    <h2>Grant Services</h2>
+    <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+    </p>
+    <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+    </p>
+    <h3>Click here to submit a grant application</h3>
+    <p><a class="btn btn-default" @Html.ActionLink("Grant Application", "Create", "GrantRequests")></a></p>
+
+    <h2>Donation Oppertunities</h2>
+    <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."
+    </p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Grant Requests</h2>
+        <p>
+            Submit a new Grant Request Here.
+        </p>
+        <p><a class="btn btn-default" @Html.ActionLink("Grant Request", "Index", "GrantRequests")></a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Learn more about our program.</h2>
+        <p>Click below to obtain more information about our program</p>
+        <p><a class="btn btn-default" @Html.ActionLink("About", "About", "Home")></a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Contact Us</h2>
+        <p>Click below to be redirected tou our contact page </p>
+        <p><a class="btn btn-default" @Html.ActionLink("Contact", "Contact", "Home")></a></p>
+    </div>
+</div>
